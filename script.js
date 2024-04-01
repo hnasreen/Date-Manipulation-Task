@@ -64,15 +64,20 @@ console.log(yeardiff);
 var monthdiff = (yeardiff*12)+(currentdate.getMonth()-inputdate.getMonth())
 console.log(monthdiff);
 
-document.getElementById('displayArea1').innerText="The selected input date is "+ inputdate 
-document.getElementById('displayArea2').innerText="The Current Date is "+currentdate
-document.getElementById('displayArea3').innerText="Total milliseconds: "+millisecdiff
-document.getElementById('displayArea4').innerText="Total seconds: "+ secdiff
-document.getElementById('displayArea5').innerText="Total minutes: "+mindiff
+document.getElementById('displayArea1').innerText="The given input date is "+ inputdate 
+// document.getElementById('displayArea2').innerText="The Current Date is "+currentdate
+document.getElementById('displayArea8').innerText="Years: "+yeardiff
+document.getElementById('displayArea9').innerText="Months: "+monthdiff;
+document.getElementById('displayArea7').innerText="Days: "+daydiff
+document.getElementById('displayArea5').innerText="Minutes: "+mindiff
+document.getElementById('displayArea4').innerText="Seconds: "+ secdiff
+document.getElementById('displayArea3').innerText="Milliseconds: "+millisecdiff
+
+
 document.getElementById('displayArea6').innerText="Total Hours: "+hoursdiff
-document.getElementById('displayArea7').innerText="Total Number of Days: "+daydiff
-document.getElementById('displayArea8').innerText="Total Number of Years: "+yeardiff
-document.getElementById('displayArea9').innerText="Total Number of Months: "+monthdiff;
+
+
+
 
 }
 else{
